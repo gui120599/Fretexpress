@@ -1,0 +1,40 @@
+.modal-container {
+    animation: fade-in-out 1s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-25px,-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+/* Estilizar a barra de rolagem vertical */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do indicador da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do indicador da barra de rolagem ao passar o mouse */
+}
+.tooltip {
+    visibility: hidden;
+}
+
+.relative:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
